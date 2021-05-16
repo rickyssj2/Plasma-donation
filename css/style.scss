@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+@import './variables';
+
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+// ================== General Styling ===================
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Oswald', sans-serif;
+    scroll-behavior: smooth;
+    font-weight: bold;
+}
+
+.container {
+    width: 100%;
+    max-width: 1440px;
+    padding: 0 2.5rem;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+section {
+    @include flex-center();
+}
+
+.split-evenly {
+    display: flex;
+    justify-content: space-between;
+}
+
+.split-evenly>* {
+    width: 100%;
+    // outline: 1px solid red;
+}
+
+.split-evenly>*+* {
+    margin-left: 10vw;
+    // outline: 1px solid red;
+}
+
+.img {
+    max-width: 100%;
+    display: block;
+}
+
+// =============== navbar =======================
+
+@import 'navbar';
+
+// =============== primary button ===============
+.btn-primary {
+    border-radius: 100px;
+    text-transform: uppercase;
+    font-weight: bold;
+    background-color: $tertiary-1;
+    color: #fff !important;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: all 300ms ease-in-out;
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+    background-color: transparent;
+    color: $tertiary-1 !important;
+    box-shadow: 0 0 0 1px $tertiary-1;
+}
+
+// ============ section-1 ===============
+
+.sect-1 {
+    background-color: $primary-2;
+    padding: 4rem 0;
+    // outline: 1px solid red;
+
+    @media screen and (min-width: 768px) {
+        padding: 8rem 0 5rem 0;
+    }
+
+    .btn-primary {
+        border-radius: 100px;
+        text-transform: uppercase;
+        font-weight: bold;
+        background-color: $tertiary-1;
+        color: #fff !important;
+        padding: 0.33em 1em;
+        font-size: calc(1rem + 1vw);
+        cursor: pointer;
+        transition: all 300ms ease-in-out;
+    }
+
+    .btn-primary+.btn-primary {
+        margin-left: 1em;
+    }
+
+    .hero-title {
+        font-size: calc(2.250rem + 1.48vw);
+        color: $primary-1;
+        text-transform: uppercase;
+        line-height: 1em;
+    }
+
+    .hero-text {
+        font-size: 1.125rem;
+        color: $secondary;
+        margin: 2em 0;
+    }
+
+    .md-visible {
+        display: none;
+
+        @media screen and (min-width: 768px) {
+            display: initial;
+        }
+    }
+
+    .img {
+        margin-left: auto;
+    }
+}
