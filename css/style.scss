@@ -109,6 +109,17 @@ section {
 
     .btn-primary+.btn-primary {
         margin-left: 1em;
+
+        @media screen and (max-width: 350px) {
+            margin-left: 0.1em;
+        }
+    }
+
+    .btn-primary:hover,
+    .btn-primary:focus {
+        background-color: transparent;
+        color: $tertiary-1 !important;
+        box-shadow: 0 0 0 1px $tertiary-1;
     }
 
     .hero-title {

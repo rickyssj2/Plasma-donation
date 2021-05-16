@@ -164,7 +164,6 @@ section {
     text-align: center;
     -webkit-transition: 0.3s;
     transition: 0.3s;
-    outline: 1px solid red;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -174,7 +173,6 @@ section {
             justify-content: center;
   }
   .nav-menu .nav-item {
-    outline: 1px solid red;
     margin: 1em;
     padding: 0;
   }
@@ -243,6 +241,20 @@ section {
 
 .sect-1 .btn-primary + .btn-primary {
   margin-left: 1em;
+}
+
+@media screen and (max-width: 350px) {
+  .sect-1 .btn-primary + .btn-primary {
+    margin-left: 0.1em;
+  }
+}
+
+.sect-1 .btn-primary:hover,
+.sect-1 .btn-primary:focus {
+  background-color: transparent;
+  color: #EF233C !important;
+  -webkit-box-shadow: 0 0 0 1px #EF233C;
+          box-shadow: 0 0 0 1px #EF233C;
 }
 
 .sect-1 .hero-title {
