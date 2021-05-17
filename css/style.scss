@@ -246,6 +246,7 @@ section {
         .email {
             text-decoration: underline;
             margin-top: 1em;
+            color: $secondary;
 
             @media screen and (min-width:768px) {
                 margin-top: initial;

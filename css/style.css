@@ -243,6 +243,9 @@ section {
     -webkit-transform: translateY(-8px) rotate(-45deg);
             transform: translateY(-8px) rotate(-45deg);
   }
+  .header.fixed {
+    position: fixed;
+  }
 }
 
 .btn-primary {
@@ -415,6 +418,7 @@ section {
 .sect-2 .text-2 .email {
   text-decoration: underline;
   margin-top: 1em;
+  color: #358E9D;
 }
 
 @media screen and (min-width: 768px) {

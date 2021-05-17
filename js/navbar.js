@@ -4,6 +4,9 @@ const mainNavLinks = document.querySelectorAll('.abc');
 const sections = document.querySelectorAll('section')
 const navLink = document.querySelectorAll(".nav-link");
 
+// header fixed only when menu opened
+const header = document.querySelector(".header")
+
 
 window.addEventListener('scroll', e => {
     let fromTop = window.scrollY + 10;
@@ -24,6 +27,7 @@ hamburger.addEventListener("click", mobileMenu);
 function mobileMenu() {
     hamburger.classList.toggle("active");
     navMenu.classList.toggle("active");
+    header.classList.toggle("fixed");
 }
 
 
