@@ -62,6 +62,40 @@ section {
   display: block;
 }
 
+.section-title {
+  font-size: calc(2.250rem + 1.48vw);
+  color: #1D4E56;
+  text-transform: uppercase;
+  line-height: 1em;
+}
+
+.md-split-evenly {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+@media screen and (min-width: 768px) {
+  .md-split-evenly {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+.md-split-evenly > * {
+  width: 100%;
+}
+
 .header {
   min-height: 85px;
   width: 100%;
@@ -257,13 +291,6 @@ section {
           box-shadow: 0 0 0 1px #EF233C;
 }
 
-.sect-1 .hero-title {
-  font-size: calc(2.250rem + 1.48vw);
-  color: #1D4E56;
-  text-transform: uppercase;
-  line-height: 1em;
-}
-
 .sect-1 .hero-text {
   font-size: 1.125rem;
   color: #358E9D;
@@ -282,5 +309,59 @@ section {
 
 .sect-1 .img {
   margin-left: auto;
+}
+
+.sect-2 {
+  padding: 4rem 0;
+}
+
+@media screen and (min-width: 768px) {
+  .sect-2 {
+    padding: 8rem 0 5rem 0;
+  }
+}
+
+.sect-2 .text {
+  font-size: calc(1rem + 1vw);
+  color: #1D4E56;
+  margin: 1.5em 0;
+  text-transform: uppercase;
+}
+
+.sect-2 .search {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media screen and (min-width: 768px) {
+  .sect-2 .search + .search {
+    margin-left: 5vw;
+  }
+}
+
+.sect-2 .form-text {
+  font-size: calc(1rem + 1vw);
+  margin: 1.5em 0;
+  font-weight: normal;
+  color: #1D4E56;
+}
+
+.sect-2 .search-field {
+  width: 70%;
+  font-size: 1rem;
+  border-radius: 100px;
+  border-color: #1D4E56;
+  padding: 0.7em;
+  margin-left: auto;
+}
+
+.sect-2 .table {
+  background-color: #ddd;
+  height: 50vh;
+  width: 100%;
 }
 /*# sourceMappingURL=style.css.map */

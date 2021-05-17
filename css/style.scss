@@ -61,6 +61,32 @@ section {
     display: block;
 }
 
+.section-title {
+    font-size: calc(2.250rem + 1.48vw);
+    color: $primary-1;
+    text-transform: uppercase;
+    line-height: 1em;
+}
+
+.md-split-evenly {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    // outline: 1px solid red;
+
+    @media screen and (min-width: 768px) {
+        flex-direction: row;
+        align-items: center;
+    }
+}
+
+.md-split-evenly>* {
+    width: 100%;
+    // outline: 1px solid red;
+}
+
+
+
 // =============== navbar =======================
 
 @import 'navbar';
@@ -122,12 +148,7 @@ section {
         box-shadow: 0 0 0 1px $tertiary-1;
     }
 
-    .hero-title {
-        font-size: calc(2.250rem + 1.48vw);
-        color: $primary-1;
-        text-transform: uppercase;
-        line-height: 1em;
-    }
+
 
     .hero-text {
         font-size: 1.125rem;
@@ -145,5 +166,55 @@ section {
 
     .img {
         margin-left: auto;
+    }
+}
+
+// =============== section 2 =============
+.sect-2 {
+    padding: 4rem 0;
+    // outline: 1px solid red;
+
+    @media screen and (min-width: 768px) {
+        padding: 8rem 0 5rem 0;
+    }
+
+    .text {
+        font-size: calc(1rem + 1vw);
+        color: $primary-1;
+        margin: 1.5em 0;
+        text-transform: uppercase;
+    }
+
+    .search {
+        display: flex;
+        align-items: center;
+    }
+
+    @media screen and (min-width: 768px) {
+        .search+.search {
+            margin-left: 5vw;
+        }
+    }
+
+    .form-text {
+        font-size: calc(1rem + 1vw);
+        margin: 1.5em 0;
+        font-weight: normal;
+        color: $primary-1;
+    }
+
+    .search-field {
+        width: 70%;
+        font-size: 1rem;
+        border-radius: 100px;
+        border-color: $primary-1;
+        padding: 0.7em;
+        margin-left: auto;
+    }
+
+    .table {
+        background-color: #ddd;
+        height: 50vh;
+        width: 100%;
     }
 }
