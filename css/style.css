@@ -176,6 +176,11 @@ section {
   color: #1D4E56;
 }
 
+.header .navbar .nav-menu .nav-link--underline:hover,
+.header .navbar .nav-menu .nav-link--underline:focus {
+  text-decoration: underline;
+}
+
 .header .navbar .nav-menu .nav-item + .nav-item {
   margin-left: 2rem;
 }

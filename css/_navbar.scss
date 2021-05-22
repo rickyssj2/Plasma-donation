@@ -46,6 +46,11 @@
                 color: #1D4E56;
             }
 
+            .nav-link--underline:hover,
+            .nav-link--underline:focus {
+                text-decoration: underline;
+            }
+
             .nav-item+.nav-item {
                 margin-left: 2rem;
 
