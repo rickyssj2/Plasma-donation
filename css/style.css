@@ -273,6 +273,9 @@ section {
   .header.fixed {
     position: fixed;
   }
+  .body.fixed {
+    position: fixed;
+  }
 }
 
 .btn-primary, .btn-secondary, .sect-1 .btn-secondary {

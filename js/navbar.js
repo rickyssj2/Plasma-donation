@@ -6,6 +6,8 @@ const navLink = document.querySelectorAll(".nav-link");
 
 // header fixed only when menu opened
 const header = document.querySelector(".header")
+const body = document.querySelector("body");
+console.log(body);
 
 
 window.addEventListener('scroll', e => {
@@ -28,6 +30,7 @@ function mobileMenu() {
     hamburger.classList.toggle("active");
     navMenu.classList.toggle("active");
     header.classList.toggle("fixed");
+    body.classList.toggle("fixed");
 }
 
 
@@ -37,4 +40,5 @@ function closeMenu() {
     hamburger.classList.remove("active");
     navMenu.classList.remove("active");
     header.classList.remove("fixed");
+    body.classList.toggle("fixed");
 }

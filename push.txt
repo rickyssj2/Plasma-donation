@@ -1,3 +1,3 @@
 git add .
-git commit -m "improvements"
-git push -u origin main
+git commit -m "minor improvements"
+git push
